@@ -11,6 +11,7 @@ NL 0.0.1
 <a href=""><button>LAMBDALOID NL0.0.1をダウンロード(現在ダウンロードできません)</button></a>
 
 <!--metadata-->
-<title>
-  LAMBDALOID NL | naochanのファイル置き場
-</title>
+<!--title-->
+<script>
+  document.title = LAMBDALOID NL | naochanのファイル置き場
+</script>
