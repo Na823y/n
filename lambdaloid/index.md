@@ -1,5 +1,3 @@
-<small>めんどくさいからmdのまま貼ります。ごめんなさい。</small>
-
 # L A M B D A L O I D
 NL edition
 NL 0.0.1
@@ -11,3 +9,8 @@ NL 0.0.1
 ## ダウンロード
 
 <a href=""><button>LAMBDALOID NL0.0.1をダウンロード(現在ダウンロードできません)</button></a>
+
+<!--metadata-->
+<title>
+  LAMBDALOID NL | naochanのファイル置き場
+</title>
