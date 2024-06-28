@@ -13,5 +13,5 @@ NL 0.0.1
 <!--metadata-->
 <!--title-->
 <script>
-  document.title = LAMBDALOID NL | naochanのファイル置き場
+  document.title = 'LAMBDALOID NL | naochanのファイル置き場';
 </script>
