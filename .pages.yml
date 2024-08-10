@@ -1,2 +1,6 @@
 media: /
-media: img
+content:
+  - name: images
+    label: Images
+    type: image
+    list: true
