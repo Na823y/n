@@ -2,6 +2,6 @@ media: /
 content:
   - name: images
     label: Images
-    type: image
+    type: collection
     path: /
     list: true
