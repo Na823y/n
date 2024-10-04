@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja" class="has-navbar-fixed-top" id="html">
+  <head id="_header">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title id="tabtitle">
+      home | naochan's website
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <style>
+      #navbutton:checked ~ #navmenu {
+        animation: navopen 1s ease 0.5s 1 alternate forwards;
+      }
+      @keyframes navopen {
+        0% {
+          width: 0vw;
+          opacity: 0;
+        }
+        100% {
+          width: 100vw;
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <h1>Naochan's website</h1>
+          </a>
+          <input type="checkbox" id="navbutton" class="is-hidden">
+          <label role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" for="navbutton">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </label>
+        </div>
+        <div class="navbar-menu" id="navmenu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="/">
+              home | ホーム
+            </a>
+            <a class="navbar-item" href="/blog/">
+              blog | ブログ
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                about
+              </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="/about/me/">
+                  about me | 自己紹介
+                </a>
+                <a class="navbar-item" href="/about/website/">
+                  about this site | このサイトについて
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                ライトモード/ダークモード 切り替え
+              </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="javascript:change_theme('theme-light')">
+                  ライトモード | light
+                </a>
+                <a class="navbar-item" href="javascript:change_theme('theme-dark')">
+                  ダークモード | dark
+                </a>
+                <a class="navbar-item" href="javascript:change_theme('system')">
+                  システムに合わせる | system
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <br>
+    <div class="box">
+      <p class="subtitle">
+        ーお知らせー
+      </p>
+      <p id="msg">
+        <a href="/?mode=birthday&ord=13" style="color: black; text-decoration: none;">Apple Eventが見たすぎて夜更かししてしまいました、、、。</a>
+      </p>
+    </div>
+    <footer class="footer">
+      <div class="box">
+        <p class="subtitle">
+          Naochan's website
+        </p>
+        <p>(this site useing <a href="https://bulma.io">Bulma</a>)</p>
+        <small>&copy; 2024 Naochan83275</small>
+      </div>
+    </footer>
+    <script src="/easteregg.js"></script>
+    <script type="module">
+      import text from "/include/import.js?path=/include/cloudflare-analytics";
+      document.getElementById('_header').innerHTML = document.getElementById('_header').innerHTML + text;
+    </script>
+  </body>
+</html>
